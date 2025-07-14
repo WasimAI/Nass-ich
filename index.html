@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>محلل Golden Tree - iChancy</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@4.0.2/dist/tesseract.min.js"></script>
+</head>
+<body>
+  <main>
+    <h1>تحليل خوارزمية Golden Tree</h1>
+
+    <section id="upload-section">
+      <h2>تحميل صور من اللعبة</h2>
+      <input type="file" id="image-upload" multiple accept="image/*" />
+      <button onclick="analyzeImages()">تحليل الصور</button>
+    </section>
+
+    <section id="results-section">
+      <h2>نتائج التحليل</h2>
+      <div id="analysis-result">لم يتم التحليل بعد.</div>
+    </section>
+
+    <section id="log-section">
+      <h2>سجل التوصيات</h2>
+      <ul id="log-list"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
